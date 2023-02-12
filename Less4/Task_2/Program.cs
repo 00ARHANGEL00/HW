@@ -3,7 +3,7 @@
 Console.Clear();
 
 Console.Write("Введите число: ");
-int num = int.Parse(Console.ReadLine());
+int num = int.Parse(Console.ReadLine()!);
 int mult = 1;
 if (num < 1) mult = 0;
 else

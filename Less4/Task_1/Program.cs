@@ -3,7 +3,7 @@
 Console.Clear();
 
 Console.Write("Введите число: ");
-int num = Math.Abs(int.Parse(Console.ReadLine()));
+int num = Math.Abs(int.Parse(Console.ReadLine()!));
 int sum = 0;
 
 while (num != 0)
