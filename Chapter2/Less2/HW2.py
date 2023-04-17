@@ -26,8 +26,12 @@ def Task2():
 
 # Задача 3. Выведите число π с заданной точностью. Точность выводится в виде десятичной дроби.
 def Task3():
-    n = int(input("Введите число: "))
-    print(f"C округлением: {round(pi, n)}")
-    print(f"Без округления: {str(pi)[:n + 2]}")
-    
+    num = float(input("Введите число: "))
+    count = 0
+    while num % 1 != 0:
+        num *= 10
+        count += 1
+    print(f"C округлением: {round(pi, count)}")
+    print(f"Без округления: {str(pi)[:count + 2]}")
+
 Task3()
