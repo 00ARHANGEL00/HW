@@ -19,6 +19,7 @@ public class Task3 {
         String operation = scan.nextLine();
         System.out.println("Введите второе число: ");
         float num2 = scan.nextInt();
+        scan.close();
         float result = 0;
         boolean flag = true;
         switch (operation) {
@@ -33,6 +34,7 @@ public class Task3 {
                 break;
             case "/":
                 result = num1 / num2;
+                break;
             default:
                 flag = false;
                 System.out.println("Введен не знак!");
