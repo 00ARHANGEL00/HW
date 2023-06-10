@@ -13,14 +13,14 @@ public class Task3 {
     public static void main(String[] args) {
         System.out.println("Введите первое число: ");
         Scanner scan = new Scanner(System.in);
-        float num1 = scan.nextInt();
+        double num1 = scan.nextDouble();
         scan.nextLine();
         System.out.println("Введите знак: ");
         String operation = scan.nextLine();
         System.out.println("Введите второе число: ");
-        float num2 = scan.nextInt();
+        double num2 = scan.nextDouble();
         scan.close();
-        float result = 0;
+        double result = 0;
         boolean flag = true;
         switch (operation) {
             case "+":
